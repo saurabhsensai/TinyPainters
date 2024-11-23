@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              tools:context=".MainActivity">
+
+    <com.example.paint2.CustomView
+            android:id="@+id/customView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <ImageButton
+                android:id="@+id/undoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/undo2"
+                android:contentDescription="Undo"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onUndoClick"
+                android:padding="4dp"/>
+
+        <ImageButton
+                android:id="@+id/redoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_redo"
+                android:contentDescription="Redo"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onRedoClick"
+                android:padding="4dp"/>
+
+        <ImageButton
+                android:id="@+id/clearButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clear"
+                android:contentDescription="Clear"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onClearClick"
+                android:padding="4dp"/>
+
+        <ImageButton
+                android:id="@+id/changeColorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_color_palette"
+                android:contentDescription="Change Color"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="onChangeColorClick"
+                android:padding="4dp"/>
+
+        <ImageButton
+                android:id="@+id/brushSizeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_brush_size"
+                android:contentDescription="Brush Size"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="4dp"/>
+        <ImageButton
+                android:id="@+id/downloadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/download"
+                android:text="Download Image"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="4dp"/>
+
+        <ImageButton
+                android:id="@+id/backgroundImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/background"
+                android:text="Download Image"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="4dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
