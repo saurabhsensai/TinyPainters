@@ -1,4 +1,4 @@
-Tiny Painters is an andrioid application.
+Tiny Painters is an android application.
 
 
 
